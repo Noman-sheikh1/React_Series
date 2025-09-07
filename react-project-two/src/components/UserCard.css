@@ -1,0 +1,13 @@
+.userCard_container{
+    margin: 25px;
+    padding: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: medium;
+    background-color: rgb(219, 158, 77); 
+    
+}
+.img_container{
+    border: 2px solid black;
+  border-radius:100px; 
+}

@@ -1,0 +1,19 @@
+*{
+  margin: 0%;
+ 
+   align-items: center;
+   justify-content: center;
+   font: large;
+   
+}
+.app_Container{
+  margin: 2px;
+  padding: 2px;
+  font-size: large;
+   width: 50vh;
+    display: flex;
+   flex-wrap: wrap;
+
+   justify-content: center;
+}
+
