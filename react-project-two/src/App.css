@@ -7,13 +7,16 @@
    
 }
 .app_Container{
+  border-radius: 200px;
   margin: 2px;
   padding: 2px;
   font-size: large;
    width: 50vh;
-    display: flex;
+   height: 50vh;
+  display: flex;
    flex-wrap: wrap;
 
    justify-content: center;
+   
 }
 
