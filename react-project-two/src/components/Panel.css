@@ -1,0 +1,9 @@
+.panel{
+font: 40px;
+margin: 2px;
+padding: 2px;
+ justify-content: center;
+ align-items: center;
+ background-color: rgb(169, 220, 220);
+ color: black;
+}

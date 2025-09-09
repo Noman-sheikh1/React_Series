@@ -11,12 +11,22 @@
   margin: 2px;
   padding: 2px;
   font-size: large;
-   width: 50vh;
-   height: 50vh;
+   /* width: 70vh;
+   height: 50vh; */
   display: flex;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
 
    justify-content: center;
    
+}
+.acordion_container{
+  margin: 20px;
+  padding: 20px;
+   border: 2px solid black ;
+   /* width: 300px;
+   height: 200px; */
+   background-color: rgb(127, 168, 168);
+   font-size: x-large;
+
 }
 
