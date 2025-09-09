@@ -6,4 +6,16 @@ padding: 2px;
  align-items: center;
  background-color: rgb(169, 220, 220);
  color: black;
+
+}
+
+.panel2{
+    font: 40px;
+margin: 20px;
+padding: 20px;
+ justify-content: center;
+ align-items: center;
+ background-color: rgb(197, 220, 169);
+ color: black;
+ flex-wrap: wrap;
 }

@@ -1,5 +1,6 @@
 
 import './App.css'
+import Accodion2 from './components/Accodion2'
 import Accordion from './components/Accordion'
 import CounterButton from './components/CounterButton'
 import UserCard from './components/userCard'
@@ -16,6 +17,7 @@ function App() {
      <div className='acordion_container'>
 
        <Accordion/>
+       <Accodion2/>
      </div>
     </div>
   )
