@@ -18,6 +18,10 @@ function App() {
     button = <LoginBtn />;
   }
 
+  function  handleClick(){
+    alert("button clicked");
+  }
+
   return (
     <div className='app_Container'>
       <UserCard name="Noman" age="21" />
@@ -28,6 +32,10 @@ function App() {
         <Accodion2 />
       </div>
       {button} 
+     <button style={{ margin: "20px", padding: "20px", backgroundColor:"white",color:"black" }} onClick={handleClick}>
+  Click Me
+</button>
+
     </div>
   );
 }
