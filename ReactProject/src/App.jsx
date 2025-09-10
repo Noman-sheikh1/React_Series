@@ -1,25 +1,56 @@
 
 
-import { useState } from 'react'
+// import { useState } from 'react'
 import './App.css'
 import Card from './components/Card'
 import ButtonComponent from './components/ButtonComponent';
 import TimeInterval from './components/TimeInterval';
 import { UserContext } from './UserContext';
+import {createBrowserRouter, RouterProvider,Link} from "react-router-dom";
+import Home from './components/Home';
+import About from './components/About';
+import Help from './components/Help';
+
+import Root from './components/Root';
+
 
 function App() {
-  const [count,SetCount]=useState(0);
+  // const [count,SetCount]=useState(0);
 
   // function handleClick(){
   //     setCount(count+1);
     
   // }
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />, // Root contains <Outlet />
+    children: [
+      { path: "/", element: <Home /> },   // Home will render inside <Outlet />
+      { path: "about", element: <About /> },
+      { path: "help", element: <Help /> },
+    ]
+  }
+]);
+
+
+
   
 
   return (
-    <>
+   
       <div>
-        <UserContext.Provider  value={{count ,SetCount}}>
+      
+        <RouterProvider router={router}/>
+          
+          
+      
+        
+        
+        
+        
+        
+        {/* <UserContext.Provider  >
 
         
         {/* <Card name="Noman">
@@ -35,18 +66,56 @@ function App() {
           
 
       
-          <h4> hello ji  My name is  noman sheikh</h4>
+          {/* <h4> hello ji  My name is  noman sheikh</h4>
           
         <Card children=" i m the second card childer">
 
-        </Card>
+        </Card> */}
         {/* <TimeInterval/> */}
-        </UserContext.Provider>
+        {/* </UserContext.Provider> } */}
         
       </div>
      
-    </>
+   
   )
-}
+};
 
 export default App
+
+
+// import './App.css';
+// import Card from './components/Card';
+// import ButtonComponent from './components/ButtonComponent';
+// import TimeInterval from './components/TimeInterval';
+// import { UserContext } from './UserContext';
+// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+// import Home from './components/Home';
+// import About from './components/About';
+// import Help from './components/Help';
+// import Root from './components/Root';
+
+// function App() {
+//   // const [count, SetCount] = useState(0);
+
+//   // function handleClick() {
+//   //   setCount(count + 1);
+//   // }
+
+//   return (
+//     <BrowserRouter>
+//       {/* Layout + Navigation */}
+//       <Root /> 
+
+//       {/* Routes */}
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path="/help" element={<Help />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
+
