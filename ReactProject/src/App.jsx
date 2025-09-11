@@ -10,6 +10,7 @@ import {createBrowserRouter, RouterProvider,Link} from "react-router-dom";
 import Home from './components/Home';
 import About from './components/About';
 import Help from './components/Help';
+import NotFound from './components/NotFound';
 
 import Root from './components/Root';
 
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },   // Home will render inside <Outlet />
       { path: "about", element: <About /> },
       { path: "help", element: <Help /> },
+      {path:"*",element:<NotFound/>}
     ]
   }
 ]);

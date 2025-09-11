@@ -5,8 +5,8 @@ import Help from './Help';
 import {NavLink } from 'react-router-dom';
 const Navigation = () => {
   return (
-     <nav>
-      <ul>
+     <nav >
+      <ul  style={{listStyle:"none"}}>
         <li><NavLink to="/"
             style={({ isActive }) => ({
               color: isActive ? "red" : "black",

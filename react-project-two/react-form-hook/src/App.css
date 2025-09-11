@@ -1,0 +1,21 @@
+body {
+  display: grid;
+  place-items: center;   /* Shortcut for justify + align */
+  height: 100vh;
+  margin: 0;
+  background-color:aqua ;
+}
+p{
+  color: red;
+}
+
+.form_container {
+  border: solid black 2px;
+  background-color: antiquewhite;
+  padding: 15px;
+  width: 50vh;
+  height: 50vh;
+  margin: 5px;
+  border-radius: 10%;
+  
+}
